@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Suit (Gunting Batu Kertas)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="wave-background"></div> <header>
+        <h1>✂️ Game Gunting Batu Kertas 🪨</h1>
+    </header>
+
+    <main class="container">
+        
+        <div class="choices-display">
+            <div class="player-area">
+                <h2>Pilihan Anda</h2>
+                <span id="player-choice-icon" class="choice-icon">?</span>
+            </div>
+            <div class="computer-area">
+                <h2>Pilihan Komputer</h2>
+                <span id="computer-choice-icon" class="choice-icon">?</span>
+            </div>
+        </div>
+
+        <div class="results-area">
+            <p id="result-text" class="result-text">Silakan pilih salah satu tombol di bawah ini!</p>
+            <div class="score-board">
+                <p>Skor Anda: <span id="player-score">0</span></p>
+                <p>Skor Komputer: <span id="computer-score">0</span></p>
+            </div>
+        </div>
+
+        <div class="selection-buttons">
+            <button class="choice-btn" data-choice="gunting" title="Gunting">
+                <i class="fas fa-hand-scissors"></i>
+            </button>
+            <button class="choice-btn" data-choice="batu" title="Batu">
+                <i class="fas fa-hand-rock"></i>
+            </button>
+            <button class="choice-btn" data-choice="kertas" title="Kertas">
+                <i class="fas fa-hand-paper"></i>
+            </button>
+        </div>
+
+        <button id="reset-button" class="btn-reset">Reset Skor</button>
+    </main>
+
+    <footer>
+        <p>Copyright 2025, Made by NELSHEN</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
